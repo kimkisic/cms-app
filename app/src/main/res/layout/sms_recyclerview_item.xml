@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp">
+    <RelativeLayout
+        android:id="@+id/yy_mm_dd_layout"
+        android:layout_width="match_parent"
+        android:layout_height="20dp">
+
+        <View
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_marginRight="0dp"
+            android:layout_toLeftOf="@+id/yy_mm_date" />
+
+        <TextView
+            android:id="@+id/yy_mm_date"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"/>
+        <View
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_marginRight="0dp"
+            android:layout_toRightOf="@+id/yy_mm_date" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_below="@+id/yy_mm_dd_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/sms_msg_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sms_textview"
+            android:layout_alignParentLeft="true"/>
+        <TextView
+            android:id="@+id/sms_date_txt_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sms_textview"
+            android:layout_toRightOf="@+id/sms_msg_txt"
+            android:layout_alignBottom="@+id/sms_msg_txt"/>
+    </RelativeLayout>
+
+</RelativeLayout>

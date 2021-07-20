@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:sl="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F2F2F2">
+
+    <com.choistec.cms.scannerReg.ScalableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        sl:scale_base_width="1080"
+        sl:scale_base_height="1820">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/common_log"
+            sl:scale_height="55"
+            sl:scale_left="45"
+            sl:scale_textsize="120"
+            sl:scale_top="70"
+            sl:scale_width="310"
+            android:textColor="#000"
+            android:gravity="center"/>
+
+        <TextView
+            android:padding="42dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edge"
+            android:text="CHOIS\nMONITORING\nSYSTEM"
+            android:gravity="center_horizontal"
+            android:textColor="#B2CCFF"
+            sl:scale_top="250"
+            sl:scale_left="70"
+            sl:scale_width="950"
+            sl:scale_height="1000"
+            sl:scale_textsize="110"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GATEWAY SETTING\nAPP."
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            sl:scale_top="860"
+            sl:scale_left="80"
+            sl:scale_width="930"
+            sl:scale_height="300"
+            sl:scale_textsize="90"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CMSG01\nVersion 1.1.1\n\nCHOISTECHNOLOGY"
+            android:textColor="#B2CCFF"
+            android:gravity="center"
+            sl:scale_top="1400"
+            sl:scale_left="80"
+            sl:scale_width="930"
+            sl:scale_height="400"
+            sl:scale_textsize="70"/>
+    </com.choistec.cms.scannerReg.ScalableLayout>
+
+</LinearLayout>

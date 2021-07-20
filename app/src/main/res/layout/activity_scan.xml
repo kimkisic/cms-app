@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sl="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <com.choistec.cms.scannerReg.ScalableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        sl:scale_base_height="1920"
+        sl:scale_base_width="1080">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#008FD9"
+            sl:scale_top="230"
+            sl:scale_left="80"
+            sl:scale_width="930"
+            sl:scale_height="120"
+            sl:scale_textsize="50"
+            android:gravity="center"
+            android:text="@string/pairing_info"
+            android:textColor="#FFFFFF" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/paring"
+            sl:scale_top="350"
+            sl:scale_left="80"
+            sl:scale_width="930"
+            sl:scale_height="240"
+            sl:scale_textsize="50"/>
+
+
+        <TextView
+            android:id="@+id/agree_title_text"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#008FD9"
+            sl:scale_top="625"
+            sl:scale_left="80"
+            sl:scale_width="930"
+            sl:scale_height="240"
+            sl:scale_textsize="50"
+            android:gravity="center"
+            android:text="@string/scan_title_msg"
+            android:textColor="#FFFFFF" />
+
+        <ProgressBar
+            android:id="@+id/progress1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminateTint="#fff"
+            sl:scale_top="695"
+            sl:scale_left="120"
+            sl:scale_width="100"
+            sl:scale_height="100"
+            sl:scale_textsize="50"
+            />
+
+
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="#F2F2F2"
+            android:cacheColorHint="#00000000"
+            android:divider="#00000000"
+            android:listSelector="#00000000"
+            sl:scale_top="865"
+            sl:scale_left="80"
+            sl:scale_width="930"
+            sl:scale_height="400"
+            sl:scale_textsize="50"
+            />
+
+        <!--닫기 주위 여백용 텍스트뷰-->
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#F2F2F2"
+            sl:scale_top="1265"
+            sl:scale_left="80"
+            sl:scale_width="930"
+            sl:scale_height="200"
+            sl:scale_textsize="50"
+            android:gravity="center"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/close_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="80"
+            android:background="@drawable/common_red_btn_background"
+            android:text="@string/close"
+            sl:scale_top="1320"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            sl:scale_left="380"
+            sl:scale_width="340"
+            sl:scale_height="100"
+            sl:scale_textsize="50"
+            />
+
+
+
+    </com.choistec.cms.scannerReg.ScalableLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string name="app_name">CmsG01</string>
+
+    <!--앱 권한-->
+
+    <string name="yes">YES</string>
+    <string name="no">NO</string>
+    <string name="app_version">App Version</string>
+    <string name="permission_msg">If you do not grant permission, you cannot use the service.\n\n[setting] > [right] Please allow permissions in.</string>
+    <string name="permission_msg2">If you do not allow permissions, the service is unavailable.\n\nAre you sure you want to exit the app?</string>
+    <string name="app_finish">FINISH</string>
+    <string name="permission_setting">Access Setting</string>
+    <string name="gps_off">GPS is off</string>
+    <string name="check_gps">Check GPS setting</string>
+    <string name="move_gps">You must turn on GPS function to use the app. Do you want to move?</string>
+
+    <!--인트로화면 설명-->
+    <string name="explanation">-explanation-</string>
+    <string name="ex1">1. Please turn on the CMS gateway device before starting the app.</string>
+    <string name="ex2">2. Press the PARING button on the gateway device.\n    (Press and scan for up to 30 sec.)</string>
+    <string name="ex3">3. Once you have completed previous steps\n Please press the OK button.</string>
+    <string name="precaution">※Caution※\n\nOnly supports 2.4 GHz WiFi connections.\nWhen you have finished entering the gateway\nplease exit the app.</string>
+    <string name="ok">OK</string>
+
+    <!--메인-->
+    <string name="gateway_not_connected">Gateway not connected</string>
+    <string name="gateway_connected">Gateway connected</string>
+    <string name="compatibility">※ 5G WIFI is not compatible. ※</string>
+    <string name="enter_information">Info input</string>
+    <string name="check_information">Check info</string>
+    <string name="gateway_search">Gateway search</string>
+    <string name="gateway_is_not_connected">Gateway is not connected.</string>
+    <string name="cms_gateway_setting_app">CMSGateway setting app</string>
+    <string name="description">Enter the WiFi information</string>
+    <string name="only_2.4GHz">Caution: supports only 2.4GHz WiFi</string>
+    <string name="mqtt_caution">Caution : An error can occur when MQTT changed</string>
+    <string name="mqtt_setting">MQTT setting</string>
+    <string name="connecting">Connecting...</string>
+    <!--메시지-->
+    <string name="msg_finish_message">Press one more time to exit.</string>
+
+    <!--입력 프로그레스바-->
+
+    <!--IP 입력 메시지-->
+    <string name="input_progress_ip_input_0_percent">\n\n\nSetting SECURITY information...\n(0%)</string>
+    <!--IP 입력 메시지-->
+    <string name="input_progress_ip_input_10_percent">\n\n\nSetting SSID information...\n(10%)</string>
+    <!--IP PW 입력 메시지-->
+    <string name="input_progress_ip_pw_input_40_percent">\n\n\nSetting WiFi password...\n(40%)</string>
+    <!--MQTT IP 입력 메시지-->
+    <string name="input_progress_mqtt_ip_input_70_percent">\n\n\nSetting MQTT IP...\n(70%)</string>
+    <!--정보 입력 실패 메시지-->
+    <string name="input_progress_fail_input_msg">\n[Failure]\n\nSetting is failed\nCheck the SSID information\n(name and PW, Security option)\nPlease try again.</string>
+    <!--정보 입력 성공 메시지-->
+    <string name="input_progress_success_input_msg">\n[Completed]\n\nSetting is completed\nWhen RED light of CMSGateway is turned off\nCMS monitoring is available on\ncms2.choistec.com</string>
+
+    <!--스캐너 검색창-->
+    <string name="close">Close</string>
+    <!--스캐너 타이틀 메시지-->
+    <string name="pairing_info">Press the pairing button on the gateway</string>
+    <string name="scan_title_msg">When CMSGateway is searched\ntouch the CMSGateway</string>
+    <string name="re_connection">Re-conn</string>
+
+    <!--스캐너 정보-->
+
+    <!--스캐너 정보 타이틀-->
+    <string name="scan_info_title">Gateway Information</string>
+    <string name="login_title">LOGIN</string>
+    <string name="user_id_txt">ID</string>
+    <string name="user_pwd_txt">PASSWORD</string>
+
+</resources>

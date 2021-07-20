@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "806333727509",
+    "project_id": "testpush-66ccd",
+    "storage_bucket": "testpush-66ccd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:806333727509:android:618fe6fb6b8122224d1f1c",
+        "android_client_info": {
+          "package_name": "com.choistec.cms.scannerReg"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "806333727509-r6lnq9rhrt45fqvpma9t3sum86ogu1h1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAkFrd-xkqWQ-eBQdG5vFPadkuQjrrwM4s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "806333727509-r6lnq9rhrt45fqvpma9t3sum86ogu1h1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

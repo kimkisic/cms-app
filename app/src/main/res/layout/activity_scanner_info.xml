@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sl="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <com.choistec.cms.scannerReg.ScalableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        sl:scale_base_height="1920"
+        sl:scale_base_width="1080">
+
+        <TextView
+            android:id="@+id/agree_title_text"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#008FD9"
+            sl:scale_top="595"
+            sl:scale_left="80"
+            sl:scale_width="930"
+            sl:scale_height="120"
+            sl:scale_textsize="50"
+            android:gravity="center"
+            android:text="@string/scan_info_title"
+            android:textColor="#FFFFFF" />
+
+        <!--백그라운드 텍스트뷰-->
+        <TextView
+            android:id="@+id/textViewScannerInfo"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#F2F2F2"
+            sl:scale_top="715"
+            sl:scale_left="80"
+            sl:scale_width="930"
+            sl:scale_height="550"
+            sl:scale_textsize="50"
+            android:gravity="center"
+            android:textColor="#FFFFFF" />
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            sl:scale_top="755"
+            sl:scale_left="80"
+            sl:scale_width="330"
+            sl:scale_height="130"
+            android:text="SSID :"
+            sl:scale_textsize="50"
+            android:gravity="center_vertical|right"
+            android:textColor="#7F7F7F" />
+
+        <!--SSID 텍스트뷰-->
+        <TextView
+            android:id="@+id/textViewSsid"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            sl:scale_top="755"
+            sl:scale_left="450"
+            sl:scale_width="450"
+            sl:scale_height="130"
+            tools:text="Choistec"
+            sl:scale_textsize="50"
+            android:gravity="center_vertical|left"
+            android:textColor="#7F7F7F" />
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            sl:scale_top="855"
+            sl:scale_left="80"
+            sl:scale_width="330"
+            sl:scale_height="130"
+            android:text="WIPI PW :"
+            sl:scale_textsize="50"
+            android:gravity="center_vertical|right"
+            android:textColor="#7F7F7F" />
+
+        <!--WIFI PW 텍스트뷰-->
+        <TextView
+            android:id="@+id/textViewWifiPw"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            sl:scale_top="855"
+            sl:scale_left="450"
+            sl:scale_width="450"
+            sl:scale_height="130"
+            tools:text="choistechnology"
+            sl:scale_textsize="50"
+            android:gravity="center_vertical|left"
+            android:textColor="#7F7F7F" />
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            sl:scale_top="955"
+            sl:scale_left="80"
+            sl:scale_width="330"
+            sl:scale_height="130"
+            android:text="MQTT IP :"
+            sl:scale_textsize="50"
+            android:gravity="center_vertical|right"
+            android:textColor="#7F7F7F" />
+
+        <!--MQTT IP 텍스트뷰-->
+        <TextView
+            android:id="@+id/textViewMqttIp"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            sl:scale_top="955"
+            sl:scale_left="450"
+            sl:scale_width="450"
+            sl:scale_height="130"
+            tools:text="192.168.0.114"
+            sl:scale_textsize="50"
+            android:gravity="center_vertical|left"
+            android:textColor="#7F7F7F" />
+
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="80"
+            android:background="@drawable/common_blue_btn_background"
+            android:text="확인"
+            sl:scale_top="1140"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            sl:scale_left="380"
+            sl:scale_width="340"
+            sl:scale_height="100"
+            sl:scale_textsize="50"
+            />
+
+
+
+    </com.choistec.cms.scannerReg.ScalableLayout>
+
+
+</LinearLayout>

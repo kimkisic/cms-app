@@ -1,0 +1,107 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer"
+    android:layout_width="240dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="end"
+    android:background="#66000000"
+    android:orientation="vertical"
+    android:padding="5dp" >
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/gateway_move_btn"
+            android:layout_alignParentRight="true"
+            android:layout_width="130dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/gateway_icon_tt"
+            android:layout_height="100dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#82966b"
+            android:gravity="bottom"
+            android:layout_below="@+id/gateway_move_btn"
+            android:layout_alignParentRight="true"
+            android:text="GateWay" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/monitor_move_btn"
+            android:layout_alignParentRight="true"
+            android:layout_width="130dp"
+            android:layout_height="100dp"
+            android:background="@drawable/monitor_icon_tt"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#82966b"
+            android:gravity="bottom"
+            android:layout_below="@+id/monitor_move_btn"
+            android:layout_alignParentRight="true"
+            android:text="Monitor"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="bottom">
+        <ImageView
+            android:id="@+id/log_out_img"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="#FFFFFFFF"
+            android:layout_gravity="bottom"/>
+    </LinearLayout>
+
+<!--    <RelativeLayout-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content">-->
+<!--        <ImageView-->
+<!--            android:id="@+id/log_out_img"-->
+<!--            android:layout_alignParentRight="true"-->
+<!--            android:layout_width="100dp"-->
+<!--            android:layout_height="100dp"-->
+<!--            android:background="#FFFFFFFF"/>-->
+<!--        <TextView-->
+<!--            android:layout_width="50dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:textColor="#82966b"-->
+<!--            android:layout_toLeftOf="@+id/log_out_img"-->
+<!--            android:layout_alignBottom="@id/log_out_img"-->
+<!--            android:gravity="bottom"-->
+<!--            android:text="Logout" />-->
+<!--    </RelativeLayout>-->
+    <RelativeLayout
+        android:id="@+id/log_out_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+        <ImageView
+            android:id="@+id/log_out_btn"
+            android:layout_alignParentRight="true"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="#FFFFFFFF"/>
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:textColor="#82966b"
+            android:layout_toLeftOf="@+id/log_out_btn"
+            android:layout_alignBottom="@id/log_out_btn"
+            android:gravity="bottom"
+            android:text="LogOut" />
+    </RelativeLayout>
+
+</LinearLayout>
+

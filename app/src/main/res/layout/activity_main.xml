@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sl="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/drawer_layout"
+    android:layout_height="match_parent"
+    android:background="#F2F2F2">
+
+    <com.choistec.cms.scannerReg.ScalableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        sl:scale_base_height="1920"
+        sl:scale_base_width="1080">
+
+        <!--초이스 로고-->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/common_log"
+            android:textColor="#000"
+            sl:scale_height="55"
+            sl:scale_left="45"
+            sl:scale_textsize="120"
+            sl:scale_top="70"
+            sl:scale_width="280" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cms_gateway_setting_app"
+            sl:scale_height="80"
+            sl:scale_left="420"
+            sl:scale_textsize="55"
+            sl:scale_top="55"
+            sl:scale_width="500"/>
+        <ImageView
+            android:id="@+id/setting_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/stting"
+            sl:scale_height="80"
+            sl:scale_left="930"
+            sl:scale_textsize="55"
+            sl:scale_top="55"
+            sl:scale_width="100"
+            />
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="CMSG01"-->
+<!--            android:gravity="center"-->
+<!--            sl:scale_height="80"-->
+<!--            sl:scale_left="460"-->
+<!--            sl:scale_textsize="50"-->
+<!--            sl:scale_top="130"-->
+<!--            sl:scale_width="580"/>-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/description"
+            sl:scale_height="180"
+            sl:scale_left="330"
+            sl:scale_textsize="50"
+            sl:scale_top="280"
+            sl:scale_width="630"/>
+
+        <!--연결 상태 텍스트뷰-->
+        <TextView
+            android:id="@+id/textViewConnectState"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gateway_not_connected"
+            android:textColor="#7F7F7F"
+            android:textStyle="bold"
+            android:visibility="invisible"
+            sl:scale_height="85"
+            sl:scale_left="270"
+            sl:scale_textsize="55"
+            sl:scale_top="305"
+            sl:scale_width="630" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminateTint="#008FD9"
+            android:visibility="gone"
+            sl:scale_top="305"
+            sl:scale_left="240"
+            sl:scale_width="85"
+            sl:scale_height="85"
+            sl:scale_textsize="50"
+            />
+
+        <!--와이파이 이름 타이틀 텍스트뷰-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WiFi SSID"
+            android:textColor="#7F7F7F"
+            sl:scale_height="85"
+            sl:scale_textsize="38"
+            sl:scale_top="475"
+            sl:scale_left="100"
+            sl:scale_width="340" />
+
+        <!--와이파이 이름 입력 에디트텍스트-->
+        <EditText
+            android:id="@+id/editTextWifiName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/main_input_outline_background"
+            android:maxLines="1"
+            android:paddingLeft="5dp"
+            android:singleLine="true"
+            android:textColor="#000"
+            android:textCursorDrawable="@drawable/custom_cursor"
+            sl:scale_height="85"
+            sl:scale_left="375"
+            sl:scale_textsize="38"
+            sl:scale_top="475"
+            sl:scale_width="390" />
+
+        <!--와이파이 비밀번호 타이틀 텍스트뷰-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WiFi PW"
+            android:textColor="#7F7F7F"
+            sl:scale_height="85"
+            sl:scale_textsize="38"
+            sl:scale_left="100"
+            sl:scale_top="590"
+            sl:scale_width="340" />
+
+        <!--와이파이 비밀번호 입력 에디트텍스트-->
+        <EditText
+            android:id="@+id/editTextWifiPW"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/main_input_outline_background"
+            android:maxLines="1"
+            android:paddingLeft="5dp"
+            android:singleLine="true"
+            android:textColor="#000"
+            android:textCursorDrawable="@drawable/custom_cursor"
+            sl:scale_height="85"
+            sl:scale_left="375"
+            sl:scale_textsize="38"
+            sl:scale_top="590"
+            sl:scale_width="390" />
+
+        <!--와이파이 보안 타입 텍스트뷰-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WiFi SECURITY"
+            android:textColor="#7F7F7F"
+            sl:scale_height="85"
+            sl:scale_left="100"
+            sl:scale_textsize="38"
+            sl:scale_top="705"
+            sl:scale_width="340" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            sl:scale_height="260"
+            sl:scale_left="375"
+            sl:scale_textsize="38"
+            sl:scale_top="705"
+            sl:scale_width="690">
+
+            <RadioGroup
+                android:id="@+id/security_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/radio_open"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="OPEN"/>
+
+                <RadioButton
+                    android:id="@+id/radio_wpa2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="WPA/WPA2"
+                    android:checked="true"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Enterprise"
+                    android:enabled="false"/>
+
+            </RadioGroup>
+<!--            <Spinner-->
+<!--                android:id="@+id/spinnerSec"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="match_parent"/>-->
+
+<!--            <CheckBox-->
+<!--                android:id="@+id/checkBoxEnt"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:text="Enterprise"-->
+<!--                android:buttonTint="#247AD0"/>-->
+
+        </LinearLayout>
+
+        <!--MQTT IP 타이틀 텍스트뷰-->
+        <TextView
+            android:id="@+id/tv_mqtt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SERVER IP"
+            android:textColor="#7F7F7F"
+            android:visibility="invisible"
+            sl:scale_height="85"
+            sl:scale_textsize="38"
+            sl:scale_top="1550"
+            sl:scale_width="340" />
+
+        <!--MQTT IP 입력 에디트텍스트-->
+        <EditText
+            android:id="@+id/editTextMqttIP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/main_input_outline_background"
+            android:maxLines="1"
+            android:text="cms2.choistec.com"
+            android:paddingLeft="5dp"
+            android:singleLine="true"
+            android:textColor="#000"
+            android:textCursorDrawable="@drawable/custom_cursor"
+            android:visibility="invisible"
+            sl:scale_height="85"
+            sl:scale_left="375"
+            sl:scale_textsize="38"
+            sl:scale_top="1550"
+            sl:scale_width="390" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/only_2.4GHz"
+            sl:scale_height="60"
+            sl:scale_left="155"
+            sl:scale_textsize="35"
+            sl:scale_top="1100"
+            sl:scale_width="840"/>
+
+        <!--모든 정보 스캐너에 최종 입력 버튼-->
+        <Button
+            android:id="@+id/btnScannerSerach"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/common_blue_btn_background"
+            android:text="OK"
+            android:textColor="#fff"
+            sl:scale_height="100"
+            android:textStyle="bold"
+            sl:scale_left="375"
+            sl:scale_textsize="38"
+            sl:scale_top="1200"
+            sl:scale_width="365" />
+
+        <!--스캐너 정보 확인 버튼-->
+        <Button
+            android:id="@+id/btnSendScannerData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/common_blue_btn_background"
+            android:text="@string/enter_information"
+            android:textColor="#fff"
+            sl:scale_height="100"
+            android:textStyle="bold"
+            sl:scale_left="375"
+            sl:scale_textsize="38"
+            sl:scale_top="1350"
+            sl:scale_width="365"  />
+
+        <!--스캐너 연결 버튼-->
+        <Button
+            android:id="@+id/btnReadScannerInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/common_blue_btn_background"
+            android:text="@string/check_information"
+            android:textColor="#fff"
+            sl:scale_height="100"
+            android:textStyle="bold"
+            sl:scale_left="375"
+            sl:scale_textsize="38"
+            sl:scale_top="1500"
+            sl:scale_width="365"  />
+
+        <Button
+            android:id="@+id/btn_mqtt_setup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mqtt_setting"
+            android:textColor="#5D5D5D"
+            sl:scale_left="375"
+            sl:scale_height="105"
+            sl:scale_textsize="38"
+            sl:scale_top="1680"
+            sl:scale_width="365"/>
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="@string/mqtt_caution"-->
+<!--            sl:scale_left="225"-->
+<!--            sl:scale_textsize="35"-->
+<!--            sl:scale_top="1800"-->
+<!--            sl:scale_width="720"-->
+<!--            sl:scale_height="95"/>-->
+
+    </com.choistec.cms.scannerReg.ScalableLayout>
+    <!--하단의 공백을 메워준다.-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+    </LinearLayout>
+    <!--현재 앱 버전 텍스트뷰-->
+    <com.choistec.cms.scannerReg.ScalableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        sl:scale_base_width="1080"
+        sl:scale_base_height="100">
+        <TextView
+            android:id="@+id/textViewVersion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            sl:scale_height="100"
+            sl:scale_left="20"
+            sl:scale_textsize="35"
+            sl:scale_width="320"
+            tools:text="ver 1.1.1"
+            android:textColor="#7F7F7F"
+            />
+    </com.choistec.cms.scannerReg.ScalableLayout>
+<include
+    layout="@layout/navi"/>
+</androidx.drawerlayout.widget.DrawerLayout>
+
+
+

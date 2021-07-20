@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--스캐너 아이디-->
+    <string name="scanner_id">scanner_id</string>
+    <!--스캐너 맥주소-->
+    <string name="scanner_mac">scanner_mac</string>
+    <!--스캐너 와이파이 이름-->
+    <string name="wifi_ssid">wifi_ssid</string>
+    <!--스캐너 와이파이 비밀번호-->
+    <string name="wifi_pw">wifi_pw</string>
+    <!--mqtt 아이피 주소-->
+    <string name="mqtt_ip">mqtt_ip</string>
+
+    <!--비콘 장비명 키-->
+    <string name="beacon_name">name</string>
+    <!--비콘 명칭 키-->
+    <string name="beacon_new_name">beacon_new_name</string>
+    <!--비콘 맥주소 키-->
+    <string name="beacon_mac">mac</string>
+    <!--비콘 숫자 키-->
+    <string name="beacon_number">beacon_number</string>
+    <!--비콘 사이즈 키-->
+    <string name="size">size</string>
+    <!--알람 모드 활성화 여부 키-->
+    <string name="key_toggle_alarm">key_toggle_alarm</string>
+    <!--알람모드 종류 키-->
+    <string name="key_list_alarm">key_list_alarm</string>
+    <!--진동 세기 키-->
+    <string name="key_list_vibration">key_list_vibration</string>
+    <!--알람 소리 종류 키-->
+    <string name="key_list_alarm_sound">key_list_alarm_sound</string>
+    <!--푸시 알람 여부 키-->
+    <string name="key_push_alarm">key_push_alarm</string>
+    <!--장치 저장 edit 키 값-->
+    <string name="key_device_setting">deviceSetting</string>
+    <!--Near 스레숄드 edit 키값-->
+    <string name="key_near">near</string>
+    <!--Far 스레숄드 edit 키값-->
+    <string name="key_far">far</string>
+    <!--회사 정보 키값-->
+    <string name="key_company_info">key_company_info</string>
+
+</resources>

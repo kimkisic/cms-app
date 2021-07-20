@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="switchtm_color">#4de533</color>
+    <color name="sb_color">#33b5e5</color>
+    <color name="transparent_background">#00FF0000</color>
+    <color name="bg">#E9E9E9</color>
+    <color name="itext">#8798b2</color>
+    <color name="edittext">#eeeeee</color>
+    <color name="dark">#607080</color>
+    <color name="gray">#b7c1d1</color>
+</resources>

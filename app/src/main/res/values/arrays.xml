@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--알람 모드-->
+    <string-array name="array_setup_alarm">
+        <item>진동 + 소리</item>
+        <item>진동 + 음성</item>
+        <item>진동</item>
+        <item>소리</item>
+        <item>음성</item>
+        <item>무음</item>
+    </string-array>
+    <!--알람 모드 인덱스-->
+    <string-array name="array_setup_alarm_index">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <!--진동 세기-->
+    <string-array name="array_vibration">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="array_vibration_index">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <!--소리 종류-->
+    <string-array name="array_setup_alarm_sound">
+        <item>모닝콜</item>
+        <item>초인종</item>
+        <item>금관악기</item>
+        <item>전화벨</item>
+        <item>비프</item>
+    </string-array>
+    <!--소리 인덱스-->
+    <string-array name="array_setup_alarm_sound_index">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+</resources>
