@@ -82,6 +82,7 @@ public class CmsMonitorScanActivity extends Activity implements BluetoothCallBac
         mContext = this;
         initView();
         checkToken();
+        //asd
         try {
             chkIpAdr();
         } catch (SocketException e) {
